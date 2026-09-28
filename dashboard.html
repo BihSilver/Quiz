@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Dashboard ao vivo · Diagnóstico de Liderança</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="dash-page">
+
+  <div class="dash-header">
+    <div>
+      <h1>Diagnóstico de Estilo de Liderança</h1>
+      <p style="margin-top:6px;">Resultados chegando em tempo real</p>
+    </div>
+    <div style="text-align:right;">
+      <div class="dash-total" id="total-count">0</div>
+      <div class="dash-total-label">respostas recebidas</div>
+    </div>
+  </div>
+
+  <div class="dash-grid">
+    <div class="profile-cards" id="profile-cards"></div>
+
+    <div class="feed" id="feed">
+      <div class="feed-empty">Aguardando as primeiras respostas…</div>
+    </div>
+  </div>
+
+  <div class="dash-actions">
+    <button class="link-btn" id="btn-reset">Limpar todas as respostas</button>
+  </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="quiz-data.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
